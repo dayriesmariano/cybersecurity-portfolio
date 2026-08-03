@@ -1,0 +1,497 @@
+/* =========================
+   GENERAL
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+
+    background:#0d1117;
+    color:#ffffff;
+    line-height:1.6;
+
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.navbar{
+
+    position:fixed;
+
+    top:0;
+    width:100%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 80px;
+
+    background:#111827;
+
+    z-index:1000;
+
+    border-bottom:1px solid #1f2937;
+
+}
+
+.logo{
+
+    font-size:28px;
+
+    font-weight:700;
+
+}
+
+.logo span{
+
+    color:#00bfff;
+
+}
+
+.nav-links{
+
+    display:flex;
+
+    list-style:none;
+
+}
+
+.nav-links li{
+
+    margin-left:35px;
+
+}
+
+.nav-links a{
+
+    text-decoration:none;
+
+    color:white;
+
+    transition:.3s;
+
+}
+
+.nav-links a:hover{
+
+    color:#00bfff;
+
+}
+
+/* =========================
+   HERO
+========================= */
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:120px 80px;
+
+}
+
+.hero-text{
+
+    width:55%;
+
+}
+
+.hero-text h3{
+
+    color:#00bfff;
+
+    margin-bottom:10px;
+
+}
+
+.hero-text h1{
+
+    font-size:60px;
+
+}
+
+.hero-text h2{
+
+    color:#00bfff;
+
+    margin-bottom:20px;
+
+}
+
+.hero-text p{
+
+    margin-bottom:30px;
+
+    color:#cbd5e1;
+
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn{
+
+    background:#00bfff;
+
+    color:white;
+
+    padding:14px 30px;
+
+    text-decoration:none;
+
+    border-radius:10px;
+
+    margin-right:15px;
+
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    background:#008ecc;
+
+}
+
+.btn2{
+
+    border:2px solid #00bfff;
+
+    color:#00bfff;
+
+    padding:14px 30px;
+
+    text-decoration:none;
+
+    border-radius:10px;
+
+    transition:.3s;
+
+}
+
+.btn2:hover{
+
+    background:#00bfff;
+
+    color:white;
+
+}
+
+/* =========================
+   PROFILE IMAGE
+========================= */
+
+.hero-image img{
+
+    width: 500px;px;
+
+    border-radius:70%;
+
+    border:5px solid #00bfff;
+
+    box-shadow:0 0 30px #00bfff;
+
+}
+
+/* =========================
+   SECTION
+========================= */
+
+section{
+
+    padding:100px 80px;
+
+}
+
+section h2{
+
+    font-size:38px;
+
+    margin-bottom:25px;
+
+    color:#00bfff;
+
+}
+
+/* =========================
+   SKILLS
+========================= */
+
+.skills-container{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:20px;
+
+}
+
+.skill{
+
+    background:#1f2937;
+
+    padding:15px 30px;
+
+    border-radius:12px;
+
+    transition:.3s;
+
+}
+
+.skill:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 0 15px #00bfff;
+
+}
+
+/* =========================
+   CERTIFICATES
+========================= */
+
+#certificates{
+    padding: 80px 50px;
+    background: #0d1117;
+}
+
+#certificates h2{
+    font-size: 40px;
+    color: #00bfff;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+/* Certificate Grid */
+
+#certificate-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+/* Certificate Card */
+
+.certificate-card{
+    background: #161b22;
+    border: 2px solid #00bfff;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.certificate-card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 0 20px #00bfff;
+}
+
+/* Certificate Image */
+
+.certificate-card img{
+    width: 100%;
+    display: block;
+    aspect-ratio: 1.414 / 1;   /* Landscape certificate ratio */
+    object-fit: cover;
+}
+
+.certificate-category{
+    color:#00bfff;
+    font-size:28px;
+    margin:40px 0 20px;
+    font-weight:bold;
+}
+
+#seminar-container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+/* Tablet */
+
+@media (max-width: 1024px){
+
+    #certificate-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+/* Small Tablet */
+
+@media (max-width: 768px){
+
+    #certificates{
+        padding: 60px 30px;
+    }
+
+    #certificates h2{
+        font-size: 32px;
+        text-align: center;
+    }
+
+    #certificate-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/* Mobile */
+
+@media (max-width: 480px){
+
+    #certificate-container{
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+.contact-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:10px;
+
+    margin-top:30px;
+
+}
+
+.contact-card{
+
+    background:#161b22;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    border:1px solid #00bfff;
+
+    transition:.3s;
+
+}
+
+.contact-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 0 25px #00bfff;
+
+}
+
+.contact-card h3{
+
+    color:#00bfff;
+
+    margin: bottom 20px;
+
+}
+
+.contact-card a{
+
+    color:white;
+
+    text-decoration:none;
+
+    word-break:break-word;
+
+}
+
+.contact-card a:hover{
+
+    color:#00bfff;
+
+}
+#about{
+    padding:80px;
+}
+
+.about-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    margin-top:40px;
+}
+
+.about-card{
+    background:#161b22;
+    border:2px solid #00bfff;
+    border-radius:15px;
+    padding:25px;
+    transition:.3s;
+}
+
+.about-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 20px #00bfff;
+}
+
+.about-card h3{
+    color:#00bfff;
+    margin-bottom:15px;
+}
+
+.about-card p{
+    color:#d1d5db;
+    line-height:1.6;
+}
+
+#projects{
+    padding:80px;
+}
+
+.project-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+}
+
+.project-card{
+    background:#161b22;
+    border:2px solid #00bfff;
+    border-radius:15px;
+    padding:25px;
+    transition:.3s;
+}
+
+.project-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 20px #00bfff;
+}
+
+.project-card h3{
+    color:#00bfff;
+    margin-bottom:15px;
+}
+
+.project-card h4{
+    color:#ffffff;
+    margin-top:20px;
+    margin-bottom:8px;
+}
+
+.project-card p{
+    color:#d1d5db;
+    line-height:1.6;
+}
