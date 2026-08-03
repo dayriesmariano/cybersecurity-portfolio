@@ -267,6 +267,138 @@ section h2{
     box-shadow:0 0 15px #00bfff;
 
 }
+Oo, nabura nga. 😅
+
+Nakita ko agad ang problema.
+
+Pagkatapos ng media queries, wala na ang buong CSS ng:
+
+❌ Contact
+❌ About
+❌ Projects
+
+Kaya nawala ang mga boxes.
+
+Idagdag mo ulit ito PAGKATAPOS ng huling } ng media query.
+/* =========================
+   CONTACT
+========================= */
+
+.contact-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+    margin-top:30px;
+}
+
+.contact-card{
+    background:#161b22;
+    border:2px solid #00bfff;
+    border-radius:15px;
+    padding:30px;
+    transition:.3s;
+}
+
+.contact-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 20px #00bfff;
+}
+
+.contact-card h3{
+    color:#00bfff;
+    margin-bottom:15px;
+}
+
+.contact-card a{
+    color:white;
+    text-decoration:none;
+    word-break:break-word;
+}
+
+.contact-card a:hover{
+    color:#00bfff;
+}
+
+/* =========================
+   ABOUT
+========================= */
+
+#about{
+    padding:80px;
+}
+
+.about-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    margin-top:40px;
+}
+
+.about-card{
+    background:#161b22;
+    border:2px solid #00bfff;
+    border-radius:15px;
+    padding:25px;
+    transition:.3s;
+}
+
+.about-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 20px #00bfff;
+}
+
+.about-card h3{
+    color:#00bfff;
+    margin-bottom:15px;
+}
+
+.about-card p{
+    color:#d1d5db;
+    line-height:1.6;
+}
+
+/* =========================
+   PROJECTS
+========================= */
+
+#projects{
+    padding:80px;
+}
+
+.project-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+}
+
+.project-card{
+    background:#161b22;
+    border:2px solid #00bfff;
+    border-radius:15px;
+    padding:25px;
+    transition:.3s;
+}
+
+.project-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 20px #00bfff;
+}
+
+.project-card h3{
+    color:#00bfff;
+    margin-bottom:15px;
+}
+
+.project-card h4{
+    color:#ffffff;
+    margin-top:20px;
+    margin-bottom:8px;
+}
+
+.project-card p{
+    color:#d1d5db;
+    line-height:1.6;
+}
 
 /* =========================
    CERTIFICATES
@@ -329,6 +461,83 @@ section h2{
     grid-template-columns:repeat(4,1fr);
     gap:20px;
 }
+/* =========================
+   CONTACT
+========================= */
+
+.contact-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+    margin-top:30px;
+}
+
+.contact-card{
+    background:#161b22;
+    border:2px solid #00bfff;
+    border-radius:15px;
+    padding:30px;
+    transition:.3s;
+}
+
+.contact-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 20px #00bfff;
+}
+
+.contact-card h3{
+    color:#00bfff;
+    margin-bottom:15px;
+}
+
+.contact-card a{
+    color:white;
+    text-decoration:none;
+    word-break:break-word;
+}
+
+.contact-card a:hover{
+    color:#00bfff;
+}
+
+/* =========================
+   ABOUT
+========================= */
+
+#about{
+    padding:80px;
+}
+
+.about-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    margin-top:40px;
+}
+
+.about-card{
+    background:#161b22;
+    border:2px solid #00bfff;
+    border-radius:15px;
+    padding:25px;
+    transition:.3s;
+}
+
+.about-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 20px #00bfff;
+}
+
+.about-card h3{
+    color:#00bfff;
+    margin-bottom:15px;
+}
+
+.about-card p{
+    color:#d1d5db;
+    line-height:1.6;
+}
+
 /* Tablet */
 
 @media (max-width: 1024px){
