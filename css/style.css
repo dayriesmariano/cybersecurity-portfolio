@@ -201,9 +201,12 @@ body{
 
 .hero-image img{
 
-    width: 500px;px;
+    width: 500px;
 
-    border-radius:70%;
+    max-width:100%;
+    height:auto;
+
+    border-radius:50%;
 
     border:5px solid #00bfff;
 
@@ -352,6 +355,13 @@ section h2{
     #certificate-container{
         grid-template-columns: repeat(2, 1fr);
     }
+    @media (max-width:768px){
+
+    .hero{
+        flex-direction:column;
+    }
+
+}
 
 }
 
@@ -494,4 +504,77 @@ section h2{
 .project-card p{
     color:#d1d5db;
     line-height:1.6;
+}
+/* ==========================
+   MOBILE RESPONSIVE
+========================== */
+
+@media (max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        padding:15px 20px;
+    }
+
+    .nav-links{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+        margin-top:15px;
+    }
+
+    .nav-links li{
+        margin:0;
+    }
+
+    .hero{
+        flex-direction:column-reverse;
+        justify-content:center;
+        text-align:center;
+        padding:120px 20px 60px;
+        gap:35px;
+    }
+
+    .hero-text{
+        width:100%;
+    }
+
+    .hero-text h1{
+        font-size:42px;
+    }
+
+    .hero-text h2{
+        font-size:28px;
+    }
+
+    .hero-text h3{
+        font-size:22px;
+    }
+
+    .hero-text p{
+        font-size:16px;
+    }
+
+    .hero-image img{
+        width:250px;
+    }
+
+    .buttons{
+        display:flex;
+        flex-direction:column;
+        gap:15px;
+        align-items:center;
+    }
+
+    .btn,
+    .btn2{
+        width:220px;
+        margin:0;
+        text-align:center;
+    }
+
+    section{
+        padding:70px 20px;
+    }
+
 }
