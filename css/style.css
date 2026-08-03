@@ -582,7 +582,6 @@ Idagdag mo ulit ito PAGKATAPOS ng huling } ng media query.
     /* Navigation */
 
     .navbar{
-        flex-direction:column;
         padding:15px 20px;
     }
 
@@ -594,8 +593,8 @@ Idagdag mo ulit ito PAGKATAPOS ng huling } ng media query.
         display:flex;
         justify-content:center;
         flex-wrap:nowrap;
-        gap:8px;
-        margin-top:12px;
+        gap:10px;
+        margin-top:10px;
     }
 
     .nav-links li{
@@ -613,7 +612,7 @@ Idagdag mo ulit ito PAGKATAPOS ng huling } ng media query.
         justify-content:center;
         align-items:center;
         text-align:center;
-        padding:180px 20px 50px;
+        padding:170px 20px 50px;
         gap:20px;
     }
 
@@ -641,7 +640,7 @@ Idagdag mo ulit ito PAGKATAPOS ng huling } ng media query.
     }
 
     .hero-image img{
-        width:200px;
+        width:190px;
     }
 
     .buttons{
@@ -675,7 +674,15 @@ Idagdag mo ulit ito PAGKATAPOS ng huling } ng media query.
 
     .project-container{
         grid-template-columns:1fr;
+        gap:20px;
     }
+    .project-card{
+    background:#161b22;
+    border:2px solid #00bfff;
+    border-radius:15px;
+    padding:25px;
+    box-shadow:0 0 15px rgba(0,191,255,0.15);
+}
 
     /* Certificates */
 
@@ -687,12 +694,17 @@ Idagdag mo ulit ito PAGKATAPOS ng huling } ng media query.
     /* Contact */
 
     .contact-container{
+        display:grid;
         grid-template-columns:1fr;
         gap:20px;
     }
 
     .contact-card{
-        padding:20px;
+        background:#161b22;
+    border:2px solid #00bfff;
+    border-radius:15px;
+    padding:25px;
+    box-shadow:0 0 15px rgba(0,191,255,0.15);
     }
 
 }
