@@ -669,19 +669,26 @@ Idagdag mo ulit ito PAGKATAPOS ng huling } ng media query.
     .about-grid{
         grid-template-columns:1fr;
     }
+    /* =========================
+   Projects (Mobile)
+========================= */
 
-    /* Projects */
+.project-container{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:25px;
+}
 
-    .project-container{
-        grid-template-columns:1fr;
-        gap:20px;
-    }
-    .project-card{
+.project-card{
+    display:block;
     background:#161b22;
     border:2px solid #00bfff;
     border-radius:15px;
     padding:25px;
-    box-shadow:0 0 15px rgba(0,191,255,0.15);
+    box-shadow:0 0 15px rgba(0,191,255,.25);
+}
+
+  
 }
 
     /* Certificates */
@@ -690,21 +697,24 @@ Idagdag mo ulit ito PAGKATAPOS ng huling } ng media query.
     #seminar-container{
         grid-template-columns:1fr;
     }
+/* =========================
+   Contact (Mobile)
+========================= */
 
-    /* Contact */
+.contact-container{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:25px;
+}
 
-    .contact-container{
-        display:grid;
-        grid-template-columns:1fr;
-        gap:20px;
-    }
-
-    .contact-card{
-        background:#161b22;
+.contact-card{
+    display:block;
+    background:#161b22;
     border:2px solid #00bfff;
     border-radius:15px;
     padding:25px;
-    box-shadow:0 0 15px rgba(0,191,255,0.15);
-    }
+    box-shadow:0 0 15px rgba(0,191,255,.25);
+}
+    
 
 }
