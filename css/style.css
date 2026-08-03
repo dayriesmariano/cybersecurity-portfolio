@@ -267,19 +267,7 @@ section h2{
     box-shadow:0 0 15px #00bfff;
 
 }
-Oo, nabura nga. 😅
 
-Nakita ko agad ang problema.
-
-Pagkatapos ng media queries, wala na ang buong CSS ng:
-
-❌ Contact
-❌ About
-❌ Projects
-
-Kaya nawala ang mga boxes.
-
-Idagdag mo ulit ito PAGKATAPOS ng huling } ng media query.
 /* =========================
    CONTACT
 ========================= */
@@ -582,6 +570,7 @@ Idagdag mo ulit ito PAGKATAPOS ng huling } ng media query.
     /* Navigation */
 
     .navbar{
+        flex-direction:column;
         padding:15px 20px;
     }
 
@@ -592,8 +581,8 @@ Idagdag mo ulit ito PAGKATAPOS ng huling } ng media query.
     .nav-links{
         display:flex;
         justify-content:center;
-        flex-wrap:nowrap;
-        gap:10px;
+        flex-wrap:wrap;
+        gap:8px;
         margin-top:10px;
     }
 
@@ -717,4 +706,3 @@ Idagdag mo ulit ito PAGKATAPOS ng huling } ng media query.
 }
     
 
-}
