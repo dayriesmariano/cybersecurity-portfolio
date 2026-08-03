@@ -382,10 +382,11 @@ section h2{
     }
 
     .nav-links{
-        flex-wrap:wrap;
+        display:flex;
         justify-content:center;
-        gap:10px;
-        margin-top:15px;
+        flex-wrap:nowrap;
+        gap:8px;
+        margin-top:12px;
     }
 
     .nav-links li{
@@ -393,7 +394,7 @@ section h2{
     }
 
     .nav-links a{
-        font-size:14px;
+        font-size:12px;
     }
 
     /* Hero */
@@ -403,7 +404,7 @@ section h2{
         justify-content:center;
         align-items:center;
         text-align:center;
-        padding:100px 20px 50px;
+        padding:180px 20px 50px;
         gap:20px;
     }
 
@@ -413,8 +414,9 @@ section h2{
     }
 
     .hero-text h1{
-        font-size:34px;
+        font-size:30px;
         line-height:1.2;
+        white-space:nowrap;
     }
 
     .hero-text h2{
